@@ -1,0 +1,15 @@
+Do some jobs in background service and keep it alive.
+The purpose of this project is research.
+Please don't use this code in application that published to user. It's a bad way.
+
+Method:
+1, run job service and daemon service in seperate process to pretect each other.
+2, Use other context to make sure above two services alive.
+
+Usage:
+1, Complete BackgroundJob.java
+2, Invoke registerTimeTickReceiver(Context) in other context.
+
+Reference:
+http://blog.sina.com.cn/s/blog_9f3cecc50101glr4.html
+http://blog.csdn.net/boyupeng/article/details/46974855
